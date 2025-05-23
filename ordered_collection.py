@@ -64,9 +64,9 @@ class Activity:
         if "summary" in d:
             self.summary = d["summary"]
         if "endTime" in d:
-            self.end_time = d["endTime"]
+            self.end_time = datetime.fromisoformat(d["endTime"])
         if "startTime" in d:
-            self.start_time = d["startTime"]
+            self.start_time = datetime.fromisoformat(d["startTime"])
         if "actor" in d:
             self.actor = d["actor"]
 
