@@ -9,4 +9,4 @@ if __name__ == "__main__":
 
     for page in coll.pages_rev():
         for act in page.activities():
-            print(f"{act._type}: {act.obj}")
+            print(f"{act._type}: {act.obj._type}: {act.obj.id}")
